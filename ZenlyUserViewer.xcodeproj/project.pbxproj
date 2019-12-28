@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0EEC1F23A3166600600112 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0EEC1E23A3166600600112 /* Person.swift */; };
+		0C0EEC2123A31E9E00600112 /* PersonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0EEC2023A31E9E00600112 /* PersonManager.swift */; };
+		0C90481123A731860056A0CE /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C90481023A731860056A0CE /* PersonCollectionViewCell.swift */; };
+		0C90481323A734CC0056A0CE /* PersonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C90481223A734CC0056A0CE /* PersonCollectionViewController.swift */; };
+		0C90481523A7784A0056A0CE /* zenly-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C90481423A7784A0056A0CE /* zenly-logo.png */; };
+		0C9E462323A77EA6007F091D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9E462223A77EA6007F091D /* Assets.xcassets */; };
+		0C9E462523A7B637007F091D /* blue-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C9E462423A7B637007F091D /* blue-button.png */; };
+		5A06C799239BADC100552837 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06C798239BADC100552837 /* PersonDetailViewController.swift */; };
+		5A06C79F239BC2A900552837 /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A06C79E239BC2A900552837 /* back-button.png */; };
+		5A06C7A3239BE31000552837 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A06C7A2239BE31000552837 /* loading.png */; };
+		5A06C7AD239BFBDE00552837 /* PersonManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06C7AC239BFBDE00552837 /* PersonManagerTests.swift */; };
+		5A06C7B5239C010500552837 /* ConnectionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06C7B4239C010500552837 /* ConnectionManagerMock.swift */; };
+		5A06C7B7239C201100552837 /* PersonStorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06C7B6239C201100552837 /* PersonStorageMock.swift */; };
+		5A9B49AA2399F4BA00A2D689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B49A92399F4BA00A2D689 /* AppDelegate.swift */; };
+		5A9B49AC2399F4BA00A2D689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B49AB2399F4BA00A2D689 /* ViewController.swift */; };
+		5A9B49AF2399F4BA00A2D689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9B49AD2399F4BA00A2D689 /* Main.storyboard */; };
+		5A9B49B42399F4BB00A2D689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9B49B22399F4BB00A2D689 /* LaunchScreen.storyboard */; };
+		5A9B4A4B239A22C800A2D689 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B4A4A239A22C800A2D689 /* ConnectionManager.swift */; };
+		5A9B4A50239A5C1500A2D689 /* PersonStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B4A4F239A5C1500A2D689 /* PersonStorage.swift */; };
+		5A9B4A53239B41CE00A2D689 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A9B4A52239B41CE00A2D689 /* placeholder.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A9B49BB2399F4BB00A2D689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9B499E2399F4BA00A2D689 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A9B49A52399F4BA00A2D689;
+			remoteInfo = EmployeeListDisplayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C0EEC1E23A3166600600112 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0C0EEC2023A31E9E00600112 /* PersonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonManager.swift; sourceTree = "<group>"; };
+		0C90481023A731860056A0CE /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C90481223A734CC0056A0CE /* PersonCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewController.swift; sourceTree = "<group>"; };
+		0C90481423A7784A0056A0CE /* zenly-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zenly-logo.png"; sourceTree = "<group>"; };
+		0C9E462223A77EA6007F091D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C9E462423A7B637007F091D /* blue-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-button.png"; sourceTree = "<group>"; };
+		5A06C798239BADC100552837 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		5A06C79E239BC2A900552837 /* back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button.png"; sourceTree = "<group>"; };
+		5A06C7A2239BE31000552837 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		5A06C7AC239BFBDE00552837 /* PersonManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonManagerTests.swift; sourceTree = "<group>"; };
+		5A06C7B4239C010500552837 /* ConnectionManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManagerMock.swift; sourceTree = "<group>"; };
+		5A06C7B6239C201100552837 /* PersonStorageMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonStorageMock.swift; sourceTree = "<group>"; };
+		5A9B49A62399F4BA00A2D689 /* ZUV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZUV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9B49A92399F4BA00A2D689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A9B49AB2399F4BA00A2D689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A9B49AE2399F4BA00A2D689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A9B49B32399F4BB00A2D689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A9B49B52399F4BB00A2D689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A9B49BA2399F4BB00A2D689 /* ZenlyUserViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenlyUserViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9B49C02399F4BB00A2D689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A9B4A4A239A22C800A2D689 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		5A9B4A4F239A5C1500A2D689 /* PersonStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStorage.swift; sourceTree = "<group>"; };
+		5A9B4A52239B41CE00A2D689 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A9B49A32399F4BA00A2D689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A9B49B72399F4BB00A2D689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A06C7AE239BFD5700552837 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5A06C7B6239C201100552837 /* PersonStorageMock.swift */,
+				5A06C7B4239C010500552837 /* ConnectionManagerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5A9B499D2399F4BA00A2D689 = {
+			isa = PBXGroup;
+			children = (
+				5A9B49A82399F4BA00A2D689 /* ZenlyUserViewer */,
+				5A9B49BD2399F4BB00A2D689 /* ZenlyUserViewerTests */,
+				5A9B4A51239A781900A2D689 /* Resources */,
+				5A9B49A72399F4BA00A2D689 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A9B49A72399F4BA00A2D689 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B49A62399F4BA00A2D689 /* ZUV.app */,
+				5A9B49BA2399F4BB00A2D689 /* ZenlyUserViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A9B49A82399F4BA00A2D689 /* ZenlyUserViewer */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B49A92399F4BA00A2D689 /* AppDelegate.swift */,
+				5A9B49CF239A0CCD00A2D689 /* Models */,
+				5A9B4A4D239A5AA900A2D689 /* Views */,
+				5A9B4A4E239A5AC700A2D689 /* Controllers */,
+				5A9B4A4C239A2DF600A2D689 /* Networking */,
+				5A9B49B22399F4BB00A2D689 /* LaunchScreen.storyboard */,
+				0C9E462223A77EA6007F091D /* Assets.xcassets */,
+				5A9B49B52399F4BB00A2D689 /* Info.plist */,
+			);
+			path = ZenlyUserViewer;
+			sourceTree = "<group>";
+		};
+		5A9B49BD2399F4BB00A2D689 /* ZenlyUserViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A06C7AC239BFBDE00552837 /* PersonManagerTests.swift */,
+				5A06C7AE239BFD5700552837 /* Mocks */,
+				5A9B49C02399F4BB00A2D689 /* Info.plist */,
+			);
+			path = ZenlyUserViewerTests;
+			sourceTree = "<group>";
+		};
+		5A9B49CF239A0CCD00A2D689 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C0EEC1E23A3166600600112 /* Person.swift */,
+				0C0EEC2023A31E9E00600112 /* PersonManager.swift */,
+				5A9B4A4F239A5C1500A2D689 /* PersonStorage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A9B4A4C239A2DF600A2D689 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B4A4A239A22C800A2D689 /* ConnectionManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5A9B4A4D239A5AA900A2D689 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B49AD2399F4BA00A2D689 /* Main.storyboard */,
+				0C90481023A731860056A0CE /* PersonCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A9B4A4E239A5AC700A2D689 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B49AB2399F4BA00A2D689 /* ViewController.swift */,
+				5A06C798239BADC100552837 /* PersonDetailViewController.swift */,
+				0C90481223A734CC0056A0CE /* PersonCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5A9B4A51239A781900A2D689 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A9B4A52239B41CE00A2D689 /* placeholder.png */,
+				5A06C79E239BC2A900552837 /* back-button.png */,
+				5A06C7A2239BE31000552837 /* loading.png */,
+				0C90481423A7784A0056A0CE /* zenly-logo.png */,
+				0C9E462423A7B637007F091D /* blue-button.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A9B49A52399F4BA00A2D689 /* ZenlyUserViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A9B49C32399F4BB00A2D689 /* Build configuration list for PBXNativeTarget "ZenlyUserViewer" */;
+			buildPhases = (
+				5A9B49A22399F4BA00A2D689 /* Sources */,
+				5A9B49A32399F4BA00A2D689 /* Frameworks */,
+				5A9B49A42399F4BA00A2D689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZenlyUserViewer;
+			productName = EmployeeListDisplayer;
+			productReference = 5A9B49A62399F4BA00A2D689 /* ZUV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A9B49B92399F4BB00A2D689 /* ZenlyUserViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A9B49C62399F4BB00A2D689 /* Build configuration list for PBXNativeTarget "ZenlyUserViewerTests" */;
+			buildPhases = (
+				5A9B49B62399F4BB00A2D689 /* Sources */,
+				5A9B49B72399F4BB00A2D689 /* Frameworks */,
+				5A9B49B82399F4BB00A2D689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A9B49BC2399F4BB00A2D689 /* PBXTargetDependency */,
+			);
+			name = ZenlyUserViewerTests;
+			productName = EmployeeListDisplayerTests;
+			productReference = 5A9B49BA2399F4BB00A2D689 /* ZenlyUserViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A9B499E2399F4BA00A2D689 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Lu, Ryan";
+				TargetAttributes = {
+					5A9B49A52399F4BA00A2D689 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5A9B49B92399F4BB00A2D689 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5A9B49A52399F4BA00A2D689;
+					};
+				};
+			};
+			buildConfigurationList = 5A9B49A12399F4BA00A2D689 /* Build configuration list for PBXProject "ZenlyUserViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A9B499D2399F4BA00A2D689;
+			productRefGroup = 5A9B49A72399F4BA00A2D689 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A9B49A52399F4BA00A2D689 /* ZenlyUserViewer */,
+				5A9B49B92399F4BB00A2D689 /* ZenlyUserViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A9B49A42399F4BA00A2D689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9B49B42399F4BB00A2D689 /* LaunchScreen.storyboard in Resources */,
+				5A9B4A53239B41CE00A2D689 /* placeholder.png in Resources */,
+				5A9B49AF2399F4BA00A2D689 /* Main.storyboard in Resources */,
+				0C9E462523A7B637007F091D /* blue-button.png in Resources */,
+				5A06C7A3239BE31000552837 /* loading.png in Resources */,
+				0C90481523A7784A0056A0CE /* zenly-logo.png in Resources */,
+				0C9E462323A77EA6007F091D /* Assets.xcassets in Resources */,
+				5A06C79F239BC2A900552837 /* back-button.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A9B49B82399F4BB00A2D689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A9B49A22399F4BA00A2D689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C90481323A734CC0056A0CE /* PersonCollectionViewController.swift in Sources */,
+				0C90481123A731860056A0CE /* PersonCollectionViewCell.swift in Sources */,
+				5A9B49AC2399F4BA00A2D689 /* ViewController.swift in Sources */,
+				5A9B4A4B239A22C800A2D689 /* ConnectionManager.swift in Sources */,
+				0C0EEC2123A31E9E00600112 /* PersonManager.swift in Sources */,
+				0C0EEC1F23A3166600600112 /* Person.swift in Sources */,
+				5A9B4A50239A5C1500A2D689 /* PersonStorage.swift in Sources */,
+				5A9B49AA2399F4BA00A2D689 /* AppDelegate.swift in Sources */,
+				5A06C799239BADC100552837 /* PersonDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A9B49B62399F4BB00A2D689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A06C7AD239BFBDE00552837 /* PersonManagerTests.swift in Sources */,
+				5A06C7B5239C010500552837 /* ConnectionManagerMock.swift in Sources */,
+				5A06C7B7239C201100552837 /* PersonStorageMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A9B49BC2399F4BB00A2D689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A9B49A52399F4BA00A2D689 /* ZenlyUserViewer */;
+			targetProxy = 5A9B49BB2399F4BB00A2D689 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A9B49AD2399F4BA00A2D689 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A9B49AE2399F4BA00A2D689 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A9B49B22399F4BB00A2D689 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A9B49B32399F4BB00A2D689 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A9B49C12399F4BB00A2D689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A9B49C22399F4BB00A2D689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A9B49C42399F4BB00A2D689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCQNM8JN;
+				INFOPLIST_FILE = ZenlyUserViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rl.ZenlyUserViewer;
+				PRODUCT_NAME = ZUV;
+				SWIFT_MODULE_NAME = ZenlyUserViewer;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A9B49C52399F4BB00A2D689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCQNM8JN;
+				INFOPLIST_FILE = ZenlyUserViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rl.ZenlyUserViewer;
+				PRODUCT_NAME = ZUV;
+				SWIFT_MODULE_NAME = ZenlyUserViewer;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A9B49C72399F4BB00A2D689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCQNM8JN;
+				INFOPLIST_FILE = ZenlyUserViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rl.ZenlyUserViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZUV.app/ZUV";
+			};
+			name = Debug;
+		};
+		5A9B49C82399F4BB00A2D689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34XCQNM8JN;
+				INFOPLIST_FILE = ZenlyUserViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rl.ZenlyUserViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZUV.app/ZUV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A9B49A12399F4BA00A2D689 /* Build configuration list for PBXProject "ZenlyUserViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9B49C12399F4BB00A2D689 /* Debug */,
+				5A9B49C22399F4BB00A2D689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A9B49C32399F4BB00A2D689 /* Build configuration list for PBXNativeTarget "ZenlyUserViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9B49C42399F4BB00A2D689 /* Debug */,
+				5A9B49C52399F4BB00A2D689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A9B49C62399F4BB00A2D689 /* Build configuration list for PBXNativeTarget "ZenlyUserViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9B49C72399F4BB00A2D689 /* Debug */,
+				5A9B49C82399F4BB00A2D689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A9B499E2399F4BA00A2D689 /* Project object */;
+}
